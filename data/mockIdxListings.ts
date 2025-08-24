@@ -12,7 +12,7 @@ export const mockIdxListings: Listing[] = [
     lotSize: 0.25,
     propertyType: "Single Family",
     garageSpaces: 2,
-    image: "/listings/house1.jpg",
+    image: ["/listings/house1.jpg"],
     status: "For Sale",
   },
   {
@@ -26,7 +26,7 @@ export const mockIdxListings: Listing[] = [
     lotSize: 0.35,
     propertyType: "Single Family",
     garageSpaces: 3,
-    image: "/listings/house2.jpg",
+    image: ["/listings/house2.jpg"],
     status: "For Sale",
   },
   {
@@ -40,7 +40,7 @@ export const mockIdxListings: Listing[] = [
     lotSize: 0.2,
     propertyType: "Townhouse",
     garageSpaces: 1,
-    image: "/listings/house3.jpg",
+    image: ["/listings/house3.jpg"],
     status: "Sold",
   },
   {
@@ -54,7 +54,7 @@ export const mockIdxListings: Listing[] = [
     lotSize: 0.4,
     propertyType: "Single Family",
     garageSpaces: 3,
-    image: "/listings/house4.jpg",
+    image: ["/listings/house4.jpg"],
     status: "For Sale",
   },
   {
@@ -68,7 +68,7 @@ export const mockIdxListings: Listing[] = [
     lotSize: 0.18,
     propertyType: "Condo",
     garageSpaces: 1,
-    image: "/listings/house5.jpg",
+    image: ["/listings/house5.jpg"],
     status: "Sold",
   },
   {
@@ -82,7 +82,7 @@ export const mockIdxListings: Listing[] = [
     lotSize: 0.3,
     propertyType: "Single Family",
     garageSpaces: 2,
-    image: "/listings/house6.jpg",
+    image: ["/listings/house6.jpg"],
     status: "For Sale",
   },
   {
@@ -96,7 +96,7 @@ export const mockIdxListings: Listing[] = [
     lotSize: 0.38,
     propertyType: "Single Family",
     garageSpaces: 3,
-    image: "/listings/house7.jpg",
+    image: ["/listings/house7.jpg"],
     status: "For Sale",
   },
   {
@@ -110,7 +110,7 @@ export const mockIdxListings: Listing[] = [
     lotSize: 0.22,
     propertyType: "Townhouse",
     garageSpaces: 2,
-    image: "/listings/house8.jpg",
+    image: ["/listings/house8.jpg"],
     status: "Sold",
   },
   {
@@ -124,7 +124,7 @@ export const mockIdxListings: Listing[] = [
     lotSize: 0.28,
     propertyType: "Single Family",
     garageSpaces: 2,
-    image: "/listings/house9.jpg",
+    image: ["/listings/house9.jpg"],
     status: "For Sale",
   },
   {
@@ -138,7 +138,7 @@ export const mockIdxListings: Listing[] = [
     lotSize: 0.45,
     propertyType: "Single Family",
     garageSpaces: 4,
-    image: "/listings/house10.jpg",
+    image: ["/listings/house10.jpg"],
     status: "For Sale",
   },
 ];
