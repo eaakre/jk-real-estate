@@ -29,7 +29,7 @@ export default async function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-20">
+      <section className="bg-gradient-to-r from-secondary to-primary py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <Typography variant="h1" className="mb-6">
             Your Trusted Fargo Real Estate Expert
@@ -37,7 +37,7 @@ export default async function Home() {
 
           <Typography
             variant="p"
-            className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto"
+            className="text-xl text-secondary-foreground mb-8 max-w-3xl mx-auto"
           >
             Jeremy Kopp helps families buy and sell homes throughout Fargo,
             Moorhead, and West Fargo. Experience personalized service and local
@@ -68,7 +68,7 @@ export default async function Home() {
             <Typography variant="h2">How I Can Help You</Typography>
             <Typography
               variant="p"
-              className="text-gray-600 mt-4 max-w-2xl mx-auto"
+              className="text-secondary-foreground mt-4 max-w-2xl mx-auto"
             >
               Whether you&apos;re buying your first home or selling a longtime
               family residence, I&apos;m here to guide you through every step of
@@ -77,7 +77,7 @@ export default async function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-white rounded-sm shadow-sm border">
+            <div className="text-center p-6 bg-secondary rounded-sm shadow-sm ">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-blue-600"
@@ -102,7 +102,7 @@ export default async function Home() {
               </Typography>
             </div>
 
-            <div className="text-center p-6 bg-white rounded-sm shadow-sm border">
+            <div className="text-center p-6 bg-secondary rounded-sm shadow-sm ">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-green-600"
@@ -127,7 +127,7 @@ export default async function Home() {
               </Typography>
             </div>
 
-            <div className="text-center p-6 bg-white rounded-sm shadow-sm border">
+            <div className="text-center p-6 bg-secondary rounded-sm shadow-sm ">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-purple-600"
@@ -155,7 +155,7 @@ export default async function Home() {
         </section>
 
         {/* Featured Listings Section */}
-        <section className="py-16 bg-gray-50 -mx-4 px-4">
+        <section className="py-16 bg-secondary -mx-4 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <Typography variant="h2">Featured Properties</Typography>
@@ -206,13 +206,13 @@ export default async function Home() {
 
               <Link
                 href="/about"
-                className="inline-block text-blue-600 hover:text-blue-700 font-semibold"
+                className="inline-block text-accent hover:text-primary-hover font-semibold"
               >
                 Learn More About Jeremy →
               </Link>
             </div>
 
-            <div className="bg-blue-50 p-8 rounded-lg">
+            <div className="bg-secondary p-8 rounded-lg">
               <Typography variant="h3" className="mb-4">
                 Ready to Get Started?
               </Typography>
@@ -225,7 +225,7 @@ export default async function Home() {
               <div className="space-y-3">
                 <div className="flex items-center">
                   <svg
-                    className="w-5 h-5 text-blue-600 mr-3"
+                    className="w-5 h-5 text-secondary-foreground mr-3"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -241,7 +241,7 @@ export default async function Home() {
                 </div>
                 <div className="flex items-center">
                   <svg
-                    className="w-5 h-5 text-blue-600 mr-3"
+                    className="w-5 h-5 text-secondary-foreground mr-3"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

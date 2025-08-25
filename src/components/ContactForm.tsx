@@ -127,21 +127,28 @@ export function ContactForm({
     <div className="mt-8">
       {listingId && (
         <div className="bg-blue-50 p-4 rounded-lg mb-6">
-          <h3 className="font-semibold text-blue-900 mb-2">Property Inquiry</h3>
-          <p className="text-blue-800">{listingAddress}</p>
+          <h3 className="font-semibold text-primary-foreground mb-2">
+            Property Inquiry
+          </h3>
+          <p className="text-secondary-foreground">{listingAddress}</p>
           {listingPrice && (
-            <p className="text-blue-800 font-medium">{listingPrice}</p>
+            <p className="text-secondary-foreground font-medium">
+              {listingPrice}
+            </p>
           )}
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form
+        onSubmit={handleSubmit}
+        className="space-y-6 text-primary-foreground"
+      >
         {/* Personal Information */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label
               htmlFor="firstName"
-              className="block text-sm font-medium text-gray-700 mb-2"
+              className="block text-sm font-medium mb-2"
             >
               First Name *
             </label>
@@ -159,7 +166,7 @@ export function ContactForm({
           <div>
             <label
               htmlFor="lastName"
-              className="block text-sm font-medium text-gray-700 mb-2"
+              className="block text-sm font-medium mb-2"
             >
               Last Name *
             </label>
@@ -177,10 +184,7 @@ export function ContactForm({
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700 mb-2"
-            >
+            <label htmlFor="email" className="block text-sm font-medium mb-2">
               Email Address *
             </label>
             <input
@@ -195,10 +199,7 @@ export function ContactForm({
           </div>
 
           <div>
-            <label
-              htmlFor="phone"
-              className="block text-sm font-medium text-gray-700 mb-2"
-            >
+            <label htmlFor="phone" className="block text-sm font-medium mb-2">
               Phone Number
             </label>
             <input
@@ -215,7 +216,7 @@ export function ContactForm({
 
         {/* Contact Preferences */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
+          <label className="block text-sm font-medium mb-2">
             Preferred Contact Method
           </label>
           <div className="flex space-x-6">
@@ -226,7 +227,7 @@ export function ContactForm({
                 value="email"
                 checked={formData.contactMethod === "email"}
                 onChange={handleChange}
-                className="mr-2 text-blue-600"
+                className="mr-2"
               />
               Email
             </label>
@@ -237,7 +238,7 @@ export function ContactForm({
                 value="phone"
                 checked={formData.contactMethod === "phone"}
                 onChange={handleChange}
-                className="mr-2 text-blue-600"
+                className="mr-2"
               />
               Phone
             </label>
@@ -248,7 +249,7 @@ export function ContactForm({
                 value="either"
                 checked={formData.contactMethod === "either"}
                 onChange={handleChange}
-                className="mr-2 text-blue-600"
+                className="mr-2"
               />
               Either
             </label>
@@ -257,10 +258,7 @@ export function ContactForm({
 
         {/* Subject */}
         <div>
-          <label
-            htmlFor="subject"
-            className="block text-sm font-medium text-gray-700 mb-2"
-          >
+          <label htmlFor="subject" className="block text-sm font-medium mb-2">
             Subject
           </label>
           <input
@@ -281,7 +279,7 @@ export function ContactForm({
               <div>
                 <label
                   htmlFor="timeframe"
-                  className="block text-sm font-medium text-gray-700 mb-2"
+                  className="block text-sm font-medium mb-2"
                 >
                   Timeframe
                 </label>
@@ -305,7 +303,7 @@ export function ContactForm({
               <div>
                 <label
                   htmlFor="propertyType"
-                  className="block text-sm font-medium text-gray-700 mb-2"
+                  className="block text-sm font-medium mb-2"
                 >
                   Property Type of Interest
                 </label>
@@ -330,7 +328,7 @@ export function ContactForm({
             <div>
               <label
                 htmlFor="priceRange"
-                className="block text-sm font-medium text-gray-700 mb-2"
+                className="block text-sm font-medium mb-2"
               >
                 Price Range
               </label>
@@ -358,9 +356,9 @@ export function ContactForm({
                   name="isFirstTimeBuyer"
                   checked={formData.isFirstTimeBuyer}
                   onChange={handleChange}
-                  className="mr-3 text-blue-600"
+                  className="mr-3 text-secondary-foreground"
                 />
-                <span className="text-sm text-gray-700">
+                <span className="text-sm text-secondary-foreground">
                   I am a first-time home buyer
                 </span>
               </label>
@@ -370,10 +368,7 @@ export function ContactForm({
 
         {/* Message */}
         <div>
-          <label
-            htmlFor="message"
-            className="block text-sm font-medium text-gray-700 mb-2"
-          >
+          <label htmlFor="message" className="block text-sm font-medium mb-2">
             Message *
           </label>
           <textarea
@@ -397,9 +392,9 @@ export function ContactForm({
               required
               checked={formData.agreeToTerms}
               onChange={handleChange}
-              className="mr-3 mt-1 text-blue-600"
+              className="mr-3 mt-1 text-secondary-foreground"
             />
-            <span className="text-sm text-gray-700">
+            <span className="text-sm text-secondary-foreground">
               I agree to be contacted by Jeremy Kopp regarding my real estate
               inquiry. I understand that I can opt out at any time. *
             </span>

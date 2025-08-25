@@ -42,12 +42,14 @@ export default function ContactPage() {
           </Typography>
 
           {/* Contact Details */}
-          <div className="space-y-6">
+          <div className="space-y-6 text-secondary-foreground">
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">Phone</h3>
-              <div className="flex items-center text-gray-600">
+              <h3 className="font-semibold text-primary-foreground mb-2">
+                Phone
+              </h3>
+              <div className="flex items-center">
                 <svg
-                  className="w-5 h-5 mr-3 text-blue-600"
+                  className="w-5 h-5 mr-3"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -61,7 +63,7 @@ export default function ContactPage() {
                 </svg>
                 <a
                   href="tel:+17015550123"
-                  className="hover:text-blue-600 transition-colors"
+                  className="hover:text-primary-hover transition-colors"
                 >
                   (701) 555-0123
                 </a>
@@ -69,10 +71,12 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
-              <div className="flex items-center text-gray-600">
+              <h3 className="font-semibold text-primary-foreground mb-2">
+                Email
+              </h3>
+              <div className="flex items-center">
                 <svg
-                  className="w-5 h-5 mr-3 text-blue-600"
+                  className="w-5 h-5 mr-3"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -86,7 +90,7 @@ export default function ContactPage() {
                 </svg>
                 <a
                   href="mailto:jeremy@jeremykopp.com"
-                  className="hover:text-blue-600 transition-colors"
+                  className="hover:text-primary-hover transition-colors"
                 >
                   jeremy@jeremykopp.com
                 </a>
@@ -94,10 +98,12 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">Office</h3>
-              <div className="flex items-start text-gray-600">
+              <h3 className="font-semibold text-primary-foreground mb-2">
+                Office
+              </h3>
+              <div className="flex items-start">
                 <svg
-                  className="w-5 h-5 mr-3 mt-0.5 text-blue-600"
+                  className="w-5 h-5 mr-3 mt-0.5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -123,12 +129,12 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">
+              <h3 className="font-semibold text-primary-foreground mb-2">
                 Response Time
               </h3>
-              <div className="flex items-center text-gray-600">
+              <div className="flex items-center">
                 <svg
-                  className="w-5 h-5 mr-3 text-blue-600"
+                  className="w-5 h-5 mr-3"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -146,9 +152,11 @@ export default function ContactPage() {
           </div>
 
           {/* Service Areas */}
-          <div className="mt-8 p-6 bg-blue-50 rounded-lg">
-            <h3 className="font-semibold text-blue-900 mb-3">Service Areas</h3>
-            <ul className="text-blue-800 space-y-1">
+          <div className="mt-8 p-6 bg-secondary rounded-lg">
+            <h3 className="font-semibold text-primary-foreground mb-3">
+              Service Areas
+            </h3>
+            <ul className="space-y-1">
               <li>• Fargo, ND</li>
               <li>• Moorhead, MN</li>
               <li>• West Fargo, ND</li>
